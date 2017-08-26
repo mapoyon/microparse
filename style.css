@@ -32,7 +32,7 @@ html {
 #resize-handle {
   width: 16px;
   height: 16px;
-  background-image: url(handle.png);
+  background-image: url(images/handle.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   box-sizing: border-box;
