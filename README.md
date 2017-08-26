@@ -11,7 +11,7 @@ Use this as overlay URL:
 
 > `https://mapoyon.github.io/microparse/`
 
-![ACT Settings](https://mapoyon.github.io/microparse/images/settings.jpg)
+![ACT Settings](https://raw.githubusercontent.com/mapoyon/microparse/master/images/settings.png)
 
 
 ## Features / Screenshots
