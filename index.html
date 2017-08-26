@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>FFXIV ACT Overlay Plugin - micro parse</title>
+  <link type="text/css" href="style.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+  <div id="vue-root">
+    <div class="encounter--no-data" v-if="! hasEncounterData">
+      No data to show.
+    </div>
+
+    <div class="encounter" v-if="hasEncounterData">
+      {{ encounter.title }} / Time: {{ encounter.duration }} / DPS: {{ encounter.ENCDPS }}
+    </div>
+
+    <table class="combatant" v-if="hasEncounterData">
+      <thead class="combatant-header">
+        <tr>
+          <th class="combatant-header__name">Name</th>
+          <th class="combatant-header__job">Job</th>
+          <th class="combatant-header__dps" colspan="2">DPS(%)</th>
+          <th class="combatant-header__crt">Crt.(%)</th>
+          <th class="combatant-header__dh">DH(%)</th>
+          <th class="combatant-header__crtdh">CrtDH(%)</th>
+        </tr>
+      </thead>
+      <tbody class="combatant-body">
+        <tr v-for="(combatant, name) in combatants">
+          <td class="combatant-body__name">{{ combatant.name }}</td>
+          <td class="combatant-body__job">{{ combatant.Job }}</td>
+          <td class="combatant-body__dps">{{ combatant.encdps | floor }}</td>
+          <td class="combatant-body__damagepct">{{ combatant["damage%"] }}</td>
+          <td class="combatant-body__crt">{{ combatant["crithit%"] }}</td>
+          <td class="combatant-body__dh">{{ combatant.DirectHitPct }}</td>
+          <td class="combatant-body__crtdh">{{ combatant.CritDirectHitPct }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="resize-handle" v-if="visibility">
+  </div>
+
+  <script type="text/javascript" src="js/resize-handle.js"></script>
+  <script type="text/javascript" src="js/vue-root.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

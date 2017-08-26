@@ -1,0 +1,110 @@
+
+* {
+  font-family: "Meiryo", sans-serif;
+  font-size: 14px;
+}
+
+@media(max-width: 580px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 460px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+html, body {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+#vue-root {
+}
+
+#resize-handle {
+  width: 16px;
+  height: 16px;
+  background-image: url(handle.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.combatant {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.encounter,
+.encounter--no-data,
+.combatant-header {
+  color: #DED7BE;
+  text-shadow: -1px 0 2px #795516, 0 1px 2px #795516, 1px 0 2px #795516, 0 -1px 2px #795516;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.combatant-header {
+  border-bottom: 1px solid #DED7BE;
+}
+
+.combatant-header__name {
+  text-align: left;
+}
+
+.combatant-body {
+  color: #E2EBF5;
+  text-shadow: -1px 0 3px #217AA2, 0 1px 3px #217AA2, 1px 0 3px #217AA2, 0 -1px 3px #217AA2;
+  font-weight: 300;
+}
+
+.combatant-header__name {
+  width: 20%;
+}
+
+.combatant-header__dps {
+  width: 15%;
+}
+
+.combatant-header__job,
+.combatant-header__crt,
+.combatant-header__dh {
+  width: 10%;
+}
+
+.combatant-header__crtdh {
+  width: 12%;
+}
+
+.combatant-body__name,
+.combatant-body__job,
+.combatant-body__dps,
+.combatant-body__damagepct,
+.combatant-body__crt,
+.combatant-body__dh,
+.combatant-body__crtdh {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.combatant-body__job,
+.combatant-body__dps,
+.combatant-body__damagepct,
+.combatant-body__crt,
+.combatant-body__dh,
+.combatant-body__crtdh {
+  text-align: center;
+}
