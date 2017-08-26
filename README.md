@@ -2,8 +2,6 @@
 
 ACT-OverlayPlugin skin for FF14.
 
----
-
 ## Usage
 
 ### Quick setup
@@ -13,14 +11,12 @@ Use this as overlay URL:
 
 > `https://mapoyon.github.io/microparse/`
 
-![ACT Settings](https://mapoyon.github.io/microparse/images/settings.png)
+![ACT Settings](https://mapoyon.github.io/microparse/images/settings.jpg)
 
 
 ## Features / Screenshots
 
 ![Overlay Preview](https://mapoyon.github.io/microparse/images/screenshot.png)
-
----
 
 ## License
 
