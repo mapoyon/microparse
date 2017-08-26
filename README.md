@@ -13,7 +13,7 @@ Use this as overlay URL:
 
 > `https://mapoyon.github.io/microparse/`
 
-![act-settings](https://mapoyon.github.io/microparse/images/act-settings.png)
+![ACT Settings](https://mapoyon.github.io/microparse/images/settings.png)
 
 
 ## Features / Screenshots
