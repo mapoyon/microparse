@@ -10,7 +10,6 @@
       this.$on("onUpdateDataSource", (function(dataSource) {
         this.encounter = dataSource.Encounter;
         this.combatants = dataSource.Combatant;
-        console.log(dataSource);
       }).bind(this));
     }),
     computed: {
